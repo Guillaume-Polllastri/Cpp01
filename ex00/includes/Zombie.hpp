@@ -6,7 +6,17 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:23:00 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/07 18:23:00 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/07 20:03:32 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+
+#include <string>
+
+class Zombie {
+private:
+
+public:
+
+};
