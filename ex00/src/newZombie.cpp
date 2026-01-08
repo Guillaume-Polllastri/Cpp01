@@ -1,25 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 18:23:00 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/08 14:52:41 by gpollast         ###   ########.fr       */
+/*   Created: 2026/01/08 14:13:44 by gpollast          #+#    #+#             */
+/*   Updated: 2026/01/08 14:13:45 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-
-#include <string>
-
-class Zombie {
-private:
-    std::string _name;
-
-public:
-    Zombie(std::string name);
-};
-
-void    randomChump(std::string name);
