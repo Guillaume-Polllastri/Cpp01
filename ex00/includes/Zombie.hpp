@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:23:00 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/08 14:52:41 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 10:25:39 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ private:
 
 public:
     Zombie(std::string name);
+	~Zombie();
+	void	announce( void );
 };
 
+Zombie* newZombie( std::string name );
 void    randomChump(std::string name);

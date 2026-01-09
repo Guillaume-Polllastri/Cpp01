@@ -6,7 +6,7 @@
 #    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:36:06 by gpollast          #+#    #+#              #
-#    Updated: 2026/01/08 14:14:18 by gpollast         ###   ########.fr        #
+#    Updated: 2026/01/09 10:36:03 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS =	src/main.cpp \
 		src/randomChump.cpp
 
 C++ = c++
-C++_FLAGS = -Wall -Wextra -Werror -std=c++98 -I./includes
+C++_FLAGS = -Wall -Wextra -Werror -std=c++98 -I./includes -g
 
 OBJ_DIR = obj
 OBJ = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
