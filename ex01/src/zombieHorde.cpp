@@ -6,14 +6,14 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 11:04:45 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 12:05:58 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 20:32:42 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Zombie.hpp"
 #include <iostream>
 
-Zombie* zombieHorde( int N, std::string name )
+Zombie* zombieHorde( int N, const std::string& name )
 {
 	Zombie*	zombieHorde = new Zombie[N];
 	

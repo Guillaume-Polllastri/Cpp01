@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 14:58:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 17:01:00 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 20:34:26 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ private:
 	std::string	_name;
 
 public:
-	HumanA(std::string name, const Weapon &weapon);
+	HumanA(const std::string& name, const Weapon& weapon);
 	void	attack() const;
 };

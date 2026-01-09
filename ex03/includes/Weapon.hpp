@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 14:58:26 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 16:29:27 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 20:35:19 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ private:
 	std::string	_type;
 
 public:
-	Weapon(std::string type);
+	Weapon(const std::string& type);
 
 	const std::string&	getType() const;
-	void				setType(std::string type);
+	void				setType(const std::string& type);
 };

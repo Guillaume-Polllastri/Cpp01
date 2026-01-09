@@ -6,14 +6,14 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 17:56:19 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 20:27:18 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 20:34:45 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/HumanB.hpp"
 #include <iostream>
 
-HumanB::HumanB(std::string name) : _weapon(NULL) ,_name(name) {
+HumanB::HumanB(const std::string& name) : _weapon(NULL) ,_name(name) {
 }
 
 void HumanB::attack() const
