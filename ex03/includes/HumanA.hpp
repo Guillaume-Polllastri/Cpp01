@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 14:58:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 20:34:26 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/09 21:08:37 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "Weapon.hpp"
 
 #include <string>
-
 
 class HumanA {
 private:
