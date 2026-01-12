@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 16:24:11 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/09 10:49:14 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/12 17:48:22 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,13 @@
 
 int main(void)
 {
-    Zombie	*zombie;
+	{
+		randomChump("toto");
+	}
+	
+	Zombie	*zombie;
 
-	zombie = newZombie("toto");
+	zombie = newZombie("tata");
 	if (!zombie)
 	{
 		std::cerr << "Error\nAllocation failed\n";
@@ -25,6 +29,5 @@ int main(void)
 	}
 	zombie->announce();
 	delete(zombie);
-	randomChump("");
     return (0);
 }
