@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 13:25:00 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/12 17:23:47 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/12 17:42:02 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,16 @@
 #include <string>
 #include <iostream>
 
-int main( void )
+int main(int ac, char **av)
 {
-    std::string str;
     Harl    harl;
     
-    while (true)
+    if (ac != 2)
     {
-        std::cout << "Enter the level of your choice (DEBUG, INFO, WARNING, ERROR): ";
-        std::getline(std::cin, str);
-        std::cout << '\n';
-        if (std::cin.eof() == 1 || str.empty() || str == "EXIT")
-	    {
-		    std::cout << '\n';
-		    break;
-	    }
-        harl.complain(str);
+        std::cerr << "Error\nThe program must have 1 parameter\n";
+        return (1);
     }
+    std::cout << '\n';
+    harl.complain(av[1]);
     return (0);
 }
