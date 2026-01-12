@@ -6,11 +6,11 @@
 #    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:36:06 by gpollast          #+#    #+#              #
-#    Updated: 2026/01/12 16:29:48 by gpollast         ###   ########.fr        #
+#    Updated: 2026/01/12 17:27:59 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harl_filter
+NAME = harlFilter
 
 SRCS =	src/main.cpp \
 		src/Harl.cpp

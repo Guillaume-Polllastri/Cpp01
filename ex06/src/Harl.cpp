@@ -6,12 +6,13 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 14:11:58 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/12 17:22:46 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/12 17:31:04 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Harl.hpp"
 #include <iostream>
+#include <stdbool.h>
 
 Harl::Harl() {
 	this->ptr_complain[0] = &Harl::debug;
@@ -38,7 +39,9 @@ void	Harl::error( void ) {
 
 void	Harl::complain( std::string level ) {
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	bool		flag;
 
+	flag = false;
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (levels[i] == level)
@@ -54,6 +57,9 @@ void	Harl::complain( std::string level ) {
 				case 3:
 					(this->*ptr_complain[3])();
 			}
+			flag = true;
 		}
 	}
+	if (flag == false)
+		std::cout << "[ Probably complaining about insignificant problems ]\n\n";
 }
