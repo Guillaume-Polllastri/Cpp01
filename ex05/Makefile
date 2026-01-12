@@ -6,13 +6,14 @@
 #    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:36:06 by gpollast          #+#    #+#              #
-#    Updated: 2026/01/12 13:22:04 by gpollast         ###   ########.fr        #
+#    Updated: 2026/01/12 14:46:23 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = replace
+NAME = harl
 
-SRCS =	main.cpp
+SRCS =	src/main.cpp \
+		src/Harl.cpp
 
 C++ = c++
 C++_FLAGS = -Wall -Wextra -Werror -std=c++98 -I./includes -g

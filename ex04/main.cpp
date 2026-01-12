@@ -6,13 +6,20 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/11 14:31:00 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/11 17:04:30 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/12 12:59:54 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string>
 #include <iostream>
 #include <fstream>
+
+// std::string	replace_string(std::string content, std::string s1, std::string s2)
+// {
+// 	std::string	result;
+
+	
+// }
 
 int	main(int ac, char **av)
 {
