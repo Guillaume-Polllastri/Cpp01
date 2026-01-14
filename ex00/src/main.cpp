@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 16:24:11 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/12 17:48:22 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/14 10:57:56 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 int main(void)
 {
-	{
-		randomChump("toto");
-	}
-	
+	randomChump("toto");
 	Zombie	*zombie;
 
 	zombie = newZombie("tata");
