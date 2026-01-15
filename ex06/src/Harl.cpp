@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 14:11:58 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/14 16:14:49 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/15 15:05:43 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ void	Harl::error( void ) {
 
 void	Harl::complain( std::string level ) {
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-
+	bool		flag = false;
+	
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (levels[i] == level)
@@ -54,10 +55,10 @@ void	Harl::complain( std::string level ) {
 					(this->*ptr_complain[2])();
 				case 3:
 					(this->*ptr_complain[3])();
-					break;
-				default:
-					std::cout << "[ Probably complaining about insignificant problems ]\n\n";
+				flag = true;
 			}
 		}
 	}
+	if (flag == false)
+		std::cout << "[ Probably complaining about insignificant problems ]\n\n";
 }
